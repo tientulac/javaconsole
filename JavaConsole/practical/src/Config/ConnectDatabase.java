@@ -1,23 +1,19 @@
 package Config;
 
-import Model.City;
 import com.microsoft.sqlserver.jdbc.SQLServerDataSource;
 import com.microsoft.sqlserver.jdbc.SQLServerException;
 
 import java.sql.Connection;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
 
 public class ConnectDatabase {
     public Connection getConnectionDB() throws SQLServerException {
         SQLServerDataSource ds = new SQLServerDataSource();
-        ds.setUser("tien123");
+        ds.setUser("phuoc1");
         ds.setPassword("123");
-        ds.setServerName("ADMIN-PC");
+        ds.setServerName("DESKTOP-8JPNURT");
         ds.setPortNumber(1433);
-        ds.setDatabaseName("MovieTheater");
+        ds.setDatabaseName("ADF2_Pratical");
         Connection conn = ds.getConnection();
         try {
             System.out.println("Connect successful !");
