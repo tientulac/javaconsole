@@ -9,7 +9,7 @@ import java.sql.SQLException;
 public class ConnectDatabase {
     public Connection getConnectionDB() throws SQLServerException {
         SQLServerDataSource ds = new SQLServerDataSource();
-        ds.setUser("phuoc1");
+        ds.setUser("tien1");
         ds.setPassword("123");
         ds.setServerName("DESKTOP-8JPNURT");
         ds.setPortNumber(1433);
